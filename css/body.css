@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.profile_content {
+text-align: center;
+line-height:50px;
+margin-top:20px;
+}
+
+.skill_content {
+display:flex;
+justify-content:space-around;
+text-align:center;
+margin-top: 50px;
+margin-bottom: 50px;
+font-size:50px;
+}
+
+.skill_content p {
+color:black;
+}
+
+.make_contents {
+    text-align:center;
+}
+.make_contents video {
+    height: 600px;
+}
+.make_contents .content {
+    margin-top: 50px;
+}
+.make_contents #MySite img {
+    height: 300px;
+}
+
+
+

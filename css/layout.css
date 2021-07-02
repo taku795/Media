@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*----------------------------------
+
+共通レイアウト
+・リセット
+・class"title"(中見出し)のレイアウト
+・その他の文字のレイアウト
+
+----------------------------------*/
+
+/*リセット*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*class"title"(中見出し)のレイアウト*/
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.title h2 {
+    font-weight: 1;
+    text-align: center;
+    font-size: 80px;
+}   
+.title:before,
+.title:after {
+    /*両端に線を入れる*/
+    content: "";
+    flex-grow: 1;
+    height: 1px; 
+    background: #FF9300;
+    margin:0 32px;
+}
+
+/*その他の文字のレイアウト*/
+* h1,h2 {
+    color: #FF9300;
+}
+* p,h3 {
+    color: #AA6F00;
+    }
