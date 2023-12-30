@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>ポートフォリオ</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/import.css" rel="stylesheet" type="text/css">
+    
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 
         <nav class="menu">
             <ul>
-            <li class=”current”><a href="#Home">Home</a></li>
+            <li class="current"><a href="#Home">Home</a></li>
             <li><a href="#Profile">Profile</a></li>
             <li><a href="#Skill">Skill</a></li>
             <li><a href="#Make">Make</a></li>
@@ -57,82 +60,109 @@
                 <h2>Skills</h2>
             </header>
 
-            <div class="skill_content">
-                <section class="skill_html">
-                    <h3>HTML/CSS</h3>
-                    <p>★★☆☆☆</p>
-                    <p>2年</p>
-                </section>
-                <section class="skill_javascript">
-                    <h3>JavaScript</h3>
-                    <p>★★★★☆</p>
-                    <p>1年</p>
-                </section>
-                <section class="skill_php">
-                    <h3>PHP</h3>
-                    <p>★★★★★</p>
-                    <p>2年</p>
-                </section>
-                <section class="skill_c">
-                    <h3>C言語</h3>
-                    <p>★★★☆☆</p>
-                    <p>2年</p>
-                </section>
-                <section class="skill_java">
-                    <h3>Java</h3>
-                    <p>★★☆☆☆</p>
-                    <p>1年</p>
-                </section>
+            <div class="container-fluid">
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <h3>HTML/CSS</h3>
+                        <p>★★☆☆☆</p>
+                        <p>2年</p>
+                    </div>
+                    <div class="col">
+                        <h3>JavaScript</h3>
+                        <p>★★★★☆</p>
+                        <p>1年</p>
+                    </div>
+                    <div class="col">
+                        <h3>PHP</h3>
+                        <p>★★★★★</p>
+                        <p>2年</p>
+                    </div>
+                    <div class="col">
+                        <h3>C言語</h3>
+                        <p>★★★☆☆</p>
+                        <p>2年</p>
+                    </div>
+                    <div class="col">
+                        <h3>Java</h3>
+                        <p>★★☆☆☆</p>
+                        <p>1年</p>
+                    </div>
+                
+                </div>
             </div>
+                
         </section>
 
         <section id="Make">
             <header class="title">
                 <h2>Make</h2>
             </header>
-            <div class="make_contents">
-                <section id="cal_app" class="content">
-                    <h3>計算問題アプリ</h3>
-                    <video src="mov/add_app.mp4" autoplay muted loop></video> 
-                    <p>＜作成した経緯＞</p>
-                    <p>母親が手書きで問題を書いていたため</p>
-                    <p>＜工夫した点＞</p>
-                    <p>①学年が上がっても使用できるよう、出題する数字の範囲を設定する機能を搭載</p>
-                    <p>②妹はかわいいキャラクターが好きなため、モチベーションを維持するために犬のキャラクターを使用</p>
-                    <br>
-                    <p>参考にしたサイトは<a href="https://www.youtube.com/watch?v=yt2AZC2V7nM">こちら</a></p>
-                </section>
 
-                <section id="TT" class="content">
-                    <h3>テトリス</h3>
-                    <video src="mov/Tetris.mp4" autoplay muted loop></video>                    
-                    <p>＜作成した経緯＞</p>
-                    <p>アプリ作成後、プログラミング興味を持ったため</p>
-                    <br>
-                    <p>参考にしたサイトは<a href="https://www.youtube.com/watch?v=iosmmQvhyzM">こちら</a></p>
-                    <br>
-                    <a href="https://github.com/taku795/Tetris">GitsURL</a>
-                </section>
+            <h3>計算問題アプリ</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">    
+                        <video src="mov/add_app.mp4" autoplay muted loop class="skill_mov"></video> 
+                    </div>
+                    <div class="col">   
+                        <p>＜作成した経緯＞</p>
+                        <p>母親が手書きで問題を書いていたため</p>
+                        <p>＜工夫した点＞</p>
+                        <p>①学年が上がっても使用できるよう、出題する数字の範囲を設定する機能を搭載</p>
+                        <p>②妹はかわいいキャラクターが好きなため、モチベーションを維持するために犬のキャラクターを使用</p>
+                        <br>
+                        <p>参考にしたサイトは<a href="https://www.youtube.com/watch?v=yt2AZC2V7nM">こちら</a></p>
+                    </div>
+                </div>
+            </div>
 
-                <section id="MySite" class="content">
-                    <h3>MySite</h3>
-                    <img src="img/mysite.jpg" alt="MySite">
-                    <p>＜作成した経緯＞</p>
-                    <p>今後自分の学習を記録として残しておくため</p>
-                    <br>
-                    <a href="https://github.com/taku795/Portfolio_Site">GitsURL</a>
-                </section>
+            <h3>テトリス</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">                   
+                        <video src="mov/Tetris.mp4" autoplay muted loop class="skill_mov"></video>                    
+                    </div>
+                    <div class="col">
+                        <p>＜作成した経緯＞</p>
+                        <p>アプリ作成後、プログラミング興味を持ったため</p>
+                        <br>
+                        <p>参考にしたサイトは<a href="https://www.youtube.com/watch?v=iosmmQvhyzM">こちら</a></p>
+                        <br>
+                        <a href="https://github.com/taku795/Tetris">GitsURL</a>
+                    </div>
+                </div>
+            </div>
 
-                <section id="HobbySite" class="content">
-                    <h3>趣味旅行サイト</h3>
-                    <img src="img/hobbysite_3.png" alt="HobbySite">
-                    <p>＜作成した経緯＞</p>
-                    <p>ポートフォリオとして作成</p>
-                    <p>＜ターゲット＞</p>
-                    <p>趣味がなかったり、新しい趣味を見つけたいと思っている方</p>
-                    <br>
-                    <a href="https://github.com/taku795/Portfolio_Site">GitsURL</a>
-                </section>
+            <h3>MySite</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/mysite.jpg" alt="MySite" class="skill_img">
+                    </div>
+                    <div class="col">
+                        <p>＜作成した経緯＞</p>
+                        <p>今後自分の学習を記録として残しておくため</p>
+                        <br>
+                        <a href="https://github.com/taku795/Portfolio_Site">GitsURL</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3>趣味旅行サイト</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/hobbysite_3.png" alt="HobbySite" class="skill_img">
+                    </div>
+                    <div class="col">
+                        <p>＜作成した経緯＞</p>
+                        <p>ポートフォリオとして作成</p>
+                        <p>＜ターゲット＞</p>
+                        <p>趣味がなかったり、新しい趣味を見つけたいと思っている方</p>
+                        <br>
+                        <a href="https://github.com/taku795/Portfolio_Site">GitsURL</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -145,3 +175,10 @@
         <p>電話番号：xxx-xxx-xxx</p>
     </fotter>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    // Bootstrap
+</script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js">
+    // Bootstrap
+</script>
